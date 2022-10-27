@@ -1,0 +1,38 @@
+.header {
+    color: white;
+    padding: 20px 0px;
+    max-height: 10%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.buttonContainer{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    a{
+        transition: .5s;
+    }
+    button{
+        max-width: 110px;
+    }
+}
+.brand{
+    max-width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    margin-right: 25px;
+    margin-left: 25px;
+
+}
+
+.title{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
