@@ -1,0 +1,30 @@
+.input_container{
+  position: relative;
+  width: 100%;
+  background-color: #3b3b3b;
+  border-radius: 6px;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  & input{
+    height: 60px;
+    border: none;
+    padding: 0 10px;
+    width: 80%;
+    &:focus{
+      outline: none;
+    }
+  }
+  & svg{
+    position: absolute;
+    top: 45%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #fff;
+    cursor: pointer;
+    transition: .5s;
+  }
+  &:focus-within svg{
+    filter: opacity(0.5);
+  }
+}

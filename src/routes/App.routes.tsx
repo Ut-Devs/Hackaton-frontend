@@ -1,7 +1,16 @@
-
+import {
+	Route,
+	Routes,
+} from 'react-router-dom'
+import Login from '../pages/Login'
+import MainPage from '../pages/MainPage'
 
 export const AppRoutes = () => {
 	return (
-		<div>App.routs</div>
+		<Routes>
+			<Route path="/login" element={<Login />} />
+			<Route path="/" element={<MainPage />} />
+		</Routes>
+    
 	)
 }
