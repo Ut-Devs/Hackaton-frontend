@@ -1,0 +1,28 @@
+.header {
+    background-color:darkblue;
+    height: 15vh;
+    width: 100vw;
+    text-align: center;
+    color: #fff;
+    font-weight: lighter;
+    position: relative;
+    padding: 10px 70px;
+}
+
+.brand{
+    max-width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    margin-right: 25px;
+}
+
+.title{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
