@@ -1,9 +1,18 @@
 .content{
+
 }
 
 .player1 {
     max-width: fit-content;
 }
+
+.classPointerName{
+    cursor: pointer;
+    &:hover{
+        color: #42858C;
+    }
+}
+
 
 .vid {
     font-size: 35px;
@@ -18,7 +27,8 @@
 
 .description {
     color: solid white;
-    font-size: 25px ;
+    font-size: 25px;
+    margin-left: 100px;
 }
 
 .list {

@@ -23,7 +23,7 @@ export const Header = () => {
 			<div className={styles.buttonContainer}>
 				<Link to='/'>Home</Link>
 				<Link to='/Contact'>Contact</Link>
-				<Button onClick={routeChange}>Entrar</Button>
+				{ window.location.pathname == '/home' ? null : <Button onClick={routeChange}>Entrar</Button> }
 			</div>
 		</div>
 	)
