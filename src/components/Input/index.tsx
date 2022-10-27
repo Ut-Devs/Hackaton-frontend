@@ -7,11 +7,11 @@ interface IInputProps extends InputHTMLAttributes<HTMLInputElement> {
   icon?: ReactNode
 }
 
-const index = ({ icon, name, type }: IInputProps) => {
+const index = ({ icon, name, type, ...props }: IInputProps) => {
 	return (
 		<div className={styles.input_container}>
 			{icon}
-			<input type={type} name={name} autoComplete="off" />
+			<input type={type} name={name} {...props} autoComplete="off" />
 		</div>
 	)
 }

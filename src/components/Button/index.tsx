@@ -3,7 +3,7 @@ import styles from './styles.module.scss'
 
 
 
-interface IButtonProps {
+interface IButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   onClick?: () => void
   children: ReactNode
   color?: 'primary' | 'secondary' | 'neutral'
@@ -22,11 +22,13 @@ const verify = (color: 'primary' | 'secondary' | 'neutral' | undefined) => {
 		return '#0FFF95'
 	}
 }
-const index = ({onClick, children, color, rounded}: IButtonProps) => {
+const index = ({onClick, children, color, rounded, ...props}: IButtonProps) => {
+
 	return (
-		<button onClick={onClick} className={styles.button} style={{
+		<button onClick={onClick} className={styles.button} {...props} style={{
 			background: verify(color),
 			borderRadius: rounded ? '50px' : '5px'
+      
 		}}>{children}</button>
 	)
 }
