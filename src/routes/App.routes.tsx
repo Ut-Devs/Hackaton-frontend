@@ -1,7 +1,14 @@
-
+import {
+	Route,
+	Routes,
+} from 'react-router-dom'
+import Login from '../pages/Login'
 
 export const AppRoutes = () => {
 	return (
-		<div>App.routs</div>
+		<Routes>
+			<Route path="/login" element={<Login />} />
+		</Routes>
+    
 	)
 }
