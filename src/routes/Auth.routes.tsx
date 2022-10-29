@@ -2,7 +2,7 @@ import {
 	Route,
 	Routes,
 } from 'react-router-dom'
-import { ClassVIdeo } from '../components/ClassVideo/ClassVIdeo'
+import ClassVIdeo  from '../pages/ClassVideo'
 
 export const AuthRoutes = () => {
 	return (
