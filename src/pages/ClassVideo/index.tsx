@@ -51,7 +51,7 @@ const ClassVIdeo = () => {
 									<RadioButtonUncheckedOutlined />
 								</ListItemIcon>
 								<ListItemText primary={moduleClass.module_name} />
-								{open ? <ExpandLess /> : <ExpandMore />}
+								{open.open && open.index == index ? <ExpandLess /> : <ExpandMore />}
 							</ListItemButton>
 							<Collapse in={open.open && open.index == index} timeout="auto" unmountOnExit>
 								<List component="div" disablePadding>
@@ -59,6 +59,7 @@ const ClassVIdeo = () => {
 										moduleClass.classes.map((classItem: any, index: number) => (
 											<ListItemButton key={index} sx={{ pl: 4 }} onClick={() => {
 												setVideoUrl(classItem.link)
+												setVideoTitle(classItem.name)
 											}}>
 												<ListItemIcon>
 													<OndemandVideo />

@@ -50,7 +50,7 @@ const Login = () => {
 			<aside className={styles.login__sideText}>
 				<h1>Bem vindo de volta!!</h1>
 				<p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Lorem ipsum dolor sit amet, testing something adipiscing elit.
           Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit.
 				</p>
 				<Button onClick={changeToRegister} color="neutral">Cadastre-se</Button>
